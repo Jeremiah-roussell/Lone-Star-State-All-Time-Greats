@@ -27,7 +27,7 @@ namespace Final_Project.Pages.Resurants
                 return NotFound();
             }
 
-            Resturant = await _context.Resturants.FirstOrDefaultAsync(m => m.ResturantID == id);
+            Resturant = await _context.Resturant.FirstOrDefaultAsync(m => m.ResturantID == id);
 
             if (Resturant == null)
             {

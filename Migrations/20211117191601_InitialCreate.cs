@@ -7,7 +7,7 @@ namespace Final_Project.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "FoodReviewers",
+                name: "FoodReviewer",
                 columns: table => new
                 {
                     FoodReviewerID = table.Column<int>(nullable: false)
@@ -16,11 +16,11 @@ namespace Final_Project.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FoodReviewers", x => x.FoodReviewerID);
+                    table.PrimaryKey("PK_FoodReviewer", x => x.FoodReviewerID);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Resturants",
+                name: "Resturant",
                 columns: table => new
                 {
                     ResturantID = table.Column<int>(nullable: false)
@@ -31,11 +31,11 @@ namespace Final_Project.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Resturants", x => x.ResturantID);
+                    table.PrimaryKey("PK_Resturant", x => x.ResturantID);
                 });
 
             migrationBuilder.CreateTable(
-                name: "ReviewResturants",
+                name: "ReviewResturant",
                 columns: table => new
                 {
                     FoodReviewerID = table.Column<int>(nullable: false),
@@ -43,37 +43,37 @@ namespace Final_Project.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ReviewResturants", x => new { x.ResturantID, x.FoodReviewerID });
+                    table.PrimaryKey("PK_ReviewResturant", x => new { x.ResturantID, x.FoodReviewerID });
                     table.ForeignKey(
-                        name: "FK_ReviewResturants_FoodReviewers_FoodReviewerID",
+                        name: "FK_ReviewResturant_FoodReviewer_FoodReviewerID",
                         column: x => x.FoodReviewerID,
-                        principalTable: "FoodReviewers",
+                        principalTable: "FoodReviewer",
                         principalColumn: "FoodReviewerID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ReviewResturants_Resturants_ResturantID",
+                        name: "FK_ReviewResturant_Resturant_ResturantID",
                         column: x => x.ResturantID,
-                        principalTable: "Resturants",
+                        principalTable: "Resturant",
                         principalColumn: "ResturantID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_ReviewResturants_FoodReviewerID",
-                table: "ReviewResturants",
+                name: "IX_ReviewResturant_FoodReviewerID",
+                table: "ReviewResturant",
                 column: "FoodReviewerID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ReviewResturants");
+                name: "ReviewResturant");
 
             migrationBuilder.DropTable(
-                name: "FoodReviewers");
+                name: "FoodReviewer");
 
             migrationBuilder.DropTable(
-                name: "Resturants");
+                name: "Resturant");
         }
     }
 }

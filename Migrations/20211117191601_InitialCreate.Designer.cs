@@ -8,7 +8,7 @@ using RegionofTexasASP.Models;
 namespace Final_Project.Migrations
 {
     [DbContext(typeof(RegionofTexasDbContext))]
-    [Migration("20211116210448_InitialCreate")]
+    [Migration("20211117191601_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,7 +28,7 @@ namespace Final_Project.Migrations
 
                     b.HasKey("FoodReviewerID");
 
-                    b.ToTable("FoodReviewers");
+                    b.ToTable("FoodReviewer");
                 });
 
             modelBuilder.Entity("RegionofTexasASP.Models.Resturant", b =>
@@ -48,7 +48,7 @@ namespace Final_Project.Migrations
 
                     b.HasKey("ResturantID");
 
-                    b.ToTable("Resturants");
+                    b.ToTable("Resturant");
                 });
 
             modelBuilder.Entity("RegionofTexasASP.Models.ReviewResturant", b =>
@@ -63,7 +63,7 @@ namespace Final_Project.Migrations
 
                     b.HasIndex("FoodReviewerID");
 
-                    b.ToTable("ReviewResturants");
+                    b.ToTable("ReviewResturant");
                 });
 
             modelBuilder.Entity("RegionofTexasASP.Models.ReviewResturant", b =>

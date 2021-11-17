@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Final Project/Lone-Star-State-All-Time-Greats/Final Project.csproj": {}
+    "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/Final Project.csproj": {}
   },
   "projects": {
-    "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Final Project/Lone-Star-State-All-Time-Greats/Final Project.csproj": {
+    "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/Final Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Final Project/Lone-Star-State-All-Time-Greats/Final Project.csproj",
+        "projectUniqueName": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/Final Project.csproj",
         "projectName": "Final Project",
-        "projectPath": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Final Project/Lone-Star-State-All-Time-Greats/Final Project.csproj",
+        "projectPath": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/Final Project.csproj",
         "packagesPath": "/Users/jeremiah/.nuget/packages/",
-        "outputPath": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Final Project/Lone-Star-State-All-Time-Greats/obj/",
+        "outputPath": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jeremiah/.nuget/NuGet/NuGet.Config"

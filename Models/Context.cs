@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore;
         {
             modelBuilder.Entity<ReviewResturant>().HasKey(s => new {s.ResturantID, s.FoodReviewerID});
         }
-		public DbSet<FoodReviewer> FoodReviewers {get; set;}
-        public DbSet<Resturant> Resturants {get; set;}
-		public DbSet <ReviewResturant> ReviewResturants{get; set;}
+		public DbSet<FoodReviewer> FoodReviewer {get; set;}
+        public DbSet<Resturant> Resturant {get; set;}
+		public DbSet <ReviewResturant> ReviewResturant{get; set;}
 	}
 }

@@ -26,7 +26,7 @@ namespace Final_Project.Migrations
 
                     b.HasKey("FoodReviewerID");
 
-                    b.ToTable("FoodReviewers");
+                    b.ToTable("FoodReviewer");
                 });
 
             modelBuilder.Entity("RegionofTexasASP.Models.Resturant", b =>
@@ -46,7 +46,7 @@ namespace Final_Project.Migrations
 
                     b.HasKey("ResturantID");
 
-                    b.ToTable("Resturants");
+                    b.ToTable("Resturant");
                 });
 
             modelBuilder.Entity("RegionofTexasASP.Models.ReviewResturant", b =>
@@ -61,7 +61,7 @@ namespace Final_Project.Migrations
 
                     b.HasIndex("FoodReviewerID");
 
-                    b.ToTable("ReviewResturants");
+                    b.ToTable("ReviewResturant");
                 });
 
             modelBuilder.Entity("RegionofTexasASP.Models.ReviewResturant", b =>

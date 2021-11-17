@@ -35,7 +35,7 @@ namespace Final_Project.Pages.Resurants
                 return Page();
             }
 
-            _context.Resturants.Add(Resturant);
+            _context.Resturant.Add(Resturant);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

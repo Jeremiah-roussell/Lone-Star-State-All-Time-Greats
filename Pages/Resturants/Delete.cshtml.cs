@@ -28,7 +28,7 @@ namespace Final_Project.Pages.Resurants
                 return NotFound();
             }
 
-            Resturant = await _context.Resturants.FirstOrDefaultAsync(m => m.ResturantID == id);
+            Resturant = await _context.Resturant.FirstOrDefaultAsync(m => m.ResturantID == id);
 
             if (Resturant == null)
             {
@@ -44,11 +44,11 @@ namespace Final_Project.Pages.Resurants
                 return NotFound();
             }
 
-            Resturant = await _context.Resturants.FindAsync(id);
+            Resturant = await _context.Resturant.FindAsync(id);
 
             if (Resturant != null)
             {
-                _context.Resturants.Remove(Resturant);
+                _context.Resturant.Remove(Resturant);
                 await _context.SaveChangesAsync();
             }
 

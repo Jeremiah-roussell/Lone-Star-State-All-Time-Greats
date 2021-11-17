@@ -13,7 +13,7 @@ using System.Collections.Generic;
                 serviceProvider.GetRequiredService<DbContextOptions<RegionofTexasDbContext>>()))
             {
         
-                if (context.FoodReviewers.Any())
+                if (context.Resturant.Any())
                 {
                     return; // DB has been seeded
                 }

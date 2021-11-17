@@ -29,7 +29,7 @@ namespace Final_Project.Pages.Resurants
                 return NotFound();
             }
 
-            Resturant = await _context.Resturants.FirstOrDefaultAsync(m => m.ResturantID == id);
+            Resturant = await _context.Resturant.FirstOrDefaultAsync(m => m.ResturantID == id);
 
             if (Resturant == null)
             {
@@ -70,7 +70,7 @@ namespace Final_Project.Pages.Resurants
 
         private bool ResturantExists(int id)
         {
-            return _context.Resturants.Any(e => e.ResturantID == id);
+            return _context.Resturant.Any(e => e.ResturantID == id);
         }
     }
 }
