@@ -22,7 +22,7 @@ namespace Final_Project.Pages.Resurants
 
         public async Task OnGetAsync()
         {
-            Resturant = await _context.Resturant.ToListAsync();
+            Resturant = await _context.Resturant.Include(a=>a.ReviewResturants).ThenInclude(sc=>sc.FoodReviewer).ToListAsync();
         }
     }
 }

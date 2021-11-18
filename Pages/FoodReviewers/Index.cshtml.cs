@@ -8,12 +8,13 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using RegionofTexasASP.Models;
 
-namespace Final_Project.Pages
+namespace Final_Project.Pages.FoodReviewers
 {
     public class IndexModel : PageModel
     {
         private readonly RegionofTexasDbContext _context;
         private readonly ILogger<IndexModel> _logger;
+        public FoodReviewer FoodReviewer{get; set;}
         public List<FoodReviewer> FoodReviewers{get; set; }
 
         public IndexModel(RegionofTexasDbContext context, ILogger<IndexModel> logger)

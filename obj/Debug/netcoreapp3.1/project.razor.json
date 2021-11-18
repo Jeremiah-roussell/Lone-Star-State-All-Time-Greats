@@ -14407,8 +14407,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/Pages/Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
+      "FilePath": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/Pages/FoodReviewers/Create.cshtml",
+      "TargetPath": "Pages\\FoodReviewers\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14422,8 +14422,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/Pages/FoodReviewers/More.cshtml",
+      "TargetPath": "Pages\\FoodReviewers\\More.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/Pages/_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/Pages/FoodReviewers/Index.cshtml",
+      "TargetPath": "Pages\\FoodReviewers\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

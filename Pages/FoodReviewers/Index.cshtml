@@ -1,0 +1,43 @@
+﻿@page
+@model Final_Project.Pages.FoodReviewers.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+ <a class="nav-item">
+                            <a class="nav-link text-blue" asp-area="" asp-page="/FoodReviewers/Create">Create New</a>
+                        </a>
+    <table class="table">
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodReviewer.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.FoodReviewers) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+               
+
+            </td>
+            
+            <td>
+                <a asp-page="./More" asp-route-id="@item.FoodReviewerID">Details</a> |
+                
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>

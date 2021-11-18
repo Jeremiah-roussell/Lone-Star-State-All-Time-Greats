@@ -1,0 +1,30 @@
+@page
+@model Final_Project.Pages.FoodReviewers.MoreModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div>
+    <h1>Details</h1>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FoodReviewer.Name)
+        </dt>
+        
+        @foreach(var r in Model.FoodReviewer.ReviewResturants)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => r.FoodReviewer)
+            </dt>
+            <dt class="col-sm-9">
+            </dt>
+        }
+    </dl>
+</div>
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>

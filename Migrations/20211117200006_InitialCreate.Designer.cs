@@ -8,7 +8,7 @@ using RegionofTexasASP.Models;
 namespace Final_Project.Migrations
 {
     [DbContext(typeof(RegionofTexasDbContext))]
-    [Migration("20211117191601_InitialCreate")]
+    [Migration("20211117200006_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

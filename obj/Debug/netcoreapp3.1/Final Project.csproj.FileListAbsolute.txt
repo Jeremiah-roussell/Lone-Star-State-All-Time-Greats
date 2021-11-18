@@ -505,7 +505,6 @@
 /Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Final Project.TagHelpers.output.cache
 /Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Final Project.RazorCoreGenerate.cache
 /Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Razor/Pages/Error.cshtml.g.cs
-/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Razor/Pages/Index.cshtml.g.cs
 /Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Razor/Pages/Privacy.cshtml.g.cs
 /Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Razor/Pages/Resturants/Create.cshtml.g.cs
 /Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Razor/Pages/Resturants/Delete.cshtml.g.cs
@@ -523,3 +522,6 @@
 /Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Final Project.dll
 /Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Final Project.pdb
 /Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Final Project.genruntimeconfig.cache
+/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Razor/Pages/FoodReviewers/Index.cshtml.g.cs
+/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Razor/Pages/FoodReviewers/Create.cshtml.g.cs
+/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/obj/Debug/netcoreapp3.1/Razor/Pages/FoodReviewers/More.cshtml.g.cs
