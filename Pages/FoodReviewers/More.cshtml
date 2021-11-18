@@ -17,11 +17,12 @@
         
         @foreach(var r in Model.FoodReviewer.ReviewResturants)
         {
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => r.FoodReviewer)
-            </dt>
-            <dt class="col-sm-9">
-            </dt>
+           <form method="post">
+                        <input type="hidden" value="@r.FoodReviewer.FoodReviewerID" />
+                        <li>
+                            @r.resturant.Name <input type="submit" Value="Remove" class="btn btn-danger btn-sm my-1" asp-page-handler="DeletedReview" asp-route-id="@Model.FoodReviewer.FoodReviewerID">
+                        </li>
+                    </form>
         }
     </dl>
 </div>

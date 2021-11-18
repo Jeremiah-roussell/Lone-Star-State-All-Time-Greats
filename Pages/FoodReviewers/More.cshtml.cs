@@ -31,7 +31,7 @@ namespace Final_Project.Pages.FoodReviewers
                 return NotFound();
             }
 
-            FoodReviewer = await _context.FoodReviewer.Include(m => m.Name).FirstOrDefaultAsync(m => m.FoodReviewerID == id);
+            FoodReviewer = await _context.FoodReviewer.Include(m => m.ReviewResturants).ThenInclude(m=>m.resturant).FirstOrDefaultAsync(m => m.FoodReviewerID == id);
 
             if (FoodReviewer == null)
             {

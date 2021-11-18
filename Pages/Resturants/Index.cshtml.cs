@@ -19,10 +19,41 @@ namespace Final_Project.Pages.Resurants
         }
 
         public IList<Resturant> Resturant { get;set; }
+        [BindProperty(SupportsGet =true)]
+        public int pagenum {get; set;}=1;
+        public int pagesize{get;set;}=5;
+        [BindProperty(SupportsGet =true)]
+        public string sort{get; set;}
 
         public async Task OnGetAsync()
         {
-            Resturant = await _context.Resturant.Include(a=>a.ReviewResturants).ThenInclude(sc=>sc.FoodReviewer).ToListAsync();
+            var query=_context.Resturant.Select(p=>p);
+            switch(sort){
+                case "Name_a":
+                query=query.OrderBy(p=>p.Name);
+                break;
+                case "Name_d":
+                query=query.OrderByDescending(p=>p.Name);
+                break;
+
+                case "Genre_a":
+                query=query.OrderBy(p=>p.Genre);
+                break;
+                case "Genre_d":
+                query=query.OrderByDescending(p=>p.Genre);
+                break;
+
+                case "Rating_a":
+                query=query.OrderBy(p=>p.Rating);
+                break;
+                case "Rating_d":
+                query=query.OrderByDescending(p=>p.Rating);
+                break;
+                
+            }
+            Resturant = await _context.Resturant.Include(a=>a.ReviewResturants).ThenInclude(sc=>sc.FoodReviewer).Skip((pagenum-1)*pagesize).Take(pagesize).ToListAsync();
         }
+       
+        
     }
 }
