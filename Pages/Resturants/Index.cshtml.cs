@@ -24,8 +24,10 @@ namespace Final_Project.Pages.Resurants
         public int pagesize{get;set;}=5;
         [BindProperty(SupportsGet =true)]
         public string sort{get; set;}
+        [BindProperty(SupportsGet =true)]
+        public string searchString{get; set;}
 
-        public async Task OnGetAsync()
+        public async Task  OnGetAsync() 
         {
             var query=_context.Resturant.Select(p=>p);
             switch(sort){
@@ -51,7 +53,8 @@ namespace Final_Project.Pages.Resurants
                 break;
                 
             }
-            Resturant = await _context.Resturant.Include(a=>a.ReviewResturants).ThenInclude(sc=>sc.FoodReviewer).Skip((pagenum-1)*pagesize).Take(pagesize).ToListAsync();
+            
+            Resturant = await query.Include(a=>a.ReviewResturants).ThenInclude(sc=>sc.FoodReviewer).Skip((pagenum-1)*pagesize).Take(pagesize).Where(p=>p.Name.Contains(searchString)).ToListAsync();
         }
        
         

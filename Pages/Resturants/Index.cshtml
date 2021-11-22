@@ -33,14 +33,22 @@
                         namesort="Name_d"; 
 
                     }
+                     var genresort="Genre_a";
+                    if(Model.sort=="Genre_a"){
+                        genresort="Genre_d";
+                    }
+                     var ratingsort="Rating_a";
+                    if(Model.sort=="Rating_a"){
+                        ratingsort="Rating_d";
+                    }
                 }
                <a asp-page="./Index" asp-route-sort="@namesort" asp-pagenum=@(Model.pagenum)>  @Html.DisplayNameFor(model => model.Resturant[0].Name)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Resturant[0].Genre)
+               <a asp-page="./Index" asp-route-sort="@genresort" asp-pagenum=@(Model.pagenum)> @Html.DisplayNameFor(model => model.Resturant[0].Genre)</a> 
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Resturant[0].Rating)
+              <a asp-page="./Index" asp-route-sort="@ratingsort" asp-pagenum=@(Model.pagenum)>   @Html.DisplayNameFor(model => model.Resturant[0].Rating)</a>
             </th>
             <th></th>
         </tr>
@@ -87,12 +95,12 @@
         ndisable="disabled";
     }
 }
-<nav aria-label="Page navigation example">
-  <ul class="pagination"> 
-    <li class="page-item @pdisable" ><a class="page-link" asp-page= "./Index" asp-route-pagenum="@(Model.pagenum-1)">Previous</a>
-    </li>
-    <li class="page-item @ndisable"><a class="page-link"asp-page= "./Index" asp-route-pagenum="@(Model.pagenum+1)">Next</a>
-    </li>
-  </ul>
+<nav aria-label="Page navigation example">
+    <ul class"pagination">
+        <li class="page-item @pdisable"><a class="page-link" asp-page="./Index" asp-route-pagenum="@(Model.pagenum-1)">Previous</a>
+        </li>
+        <li class="page-item @ndisable"><a class="page-link" asp-page="./Index" asp-route-pagenum="@(Model.pagenum+1)">Next</a>
+        </li>
+    </ul>
 </nav>
 
