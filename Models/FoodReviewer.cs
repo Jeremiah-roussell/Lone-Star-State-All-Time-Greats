@@ -14,6 +14,8 @@ using System.ComponentModel.DataAnnotations.Schema;
         public int FoodReviewerID {get; set;}	// Primary Key
 
         [BindProperty]
+        [Required]
+        [StringLength(30, MinimumLength=3)]
         public string Name {get; set;}
         public List<ReviewResturant> ReviewResturants {get; set;}
     }

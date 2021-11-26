@@ -32,7 +32,7 @@ namespace Final_Project.Pages.Resurants
         [Display(Name ="Reviewer")]
         public List<FoodReviewer> AllReviewers{get; set;}
         public SelectList ReviewDropdown{get; set;}
-
+        [BindProperty]
         public int  AddReviewer{get; set;}
          public async Task<IActionResult> OnPostDeletedReviewAsync(int? id)
         {
@@ -69,12 +69,15 @@ namespace Final_Project.Pages.Resurants
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
+            
             if (id == null)
             {
                 return NotFound();
             }
 
             Resturant = await _context.Resturant.Include(m=>m.ReviewResturants).ThenInclude(mc=>mc.FoodReviewer).FirstOrDefaultAsync(m => m.ResturantID == id);
+            AllReviewers = await _context.FoodReviewer.ToListAsync();
+            ReviewDropdown = new SelectList(AllReviewers, "FoodReviewerID", "Name");
 
             if (Resturant == null)
             {

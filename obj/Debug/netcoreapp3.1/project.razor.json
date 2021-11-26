@@ -14407,6 +14407,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/Pages/Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/jeremiah/Library/Mobile Documents/com~apple~CloudDocs/Documents/Fall 2021/Advanced Business Programing/Lone-Star-State-All-Time-Greats/Pages/FoodReviewers/Create.cshtml",
       "TargetPath": "Pages\\FoodReviewers\\Create.cshtml",
       "FileKind": "mvc"

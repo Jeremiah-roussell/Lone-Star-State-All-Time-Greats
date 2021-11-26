@@ -10,18 +10,16 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
-<form asp-controller="Resturant" asp-action="Index">
-   <form asp-action="Index" method="get">
+   <form method="get">
     <div class="form-actions no-color">
         <p>
-            Find by name: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+            Find by name: <input type="text" asp-for="searchString" value="@(Model.searchString)" />
             <input type="submit" value="Search" class="btn btn-default" /> |
             <a asp-action="Index">Back to Full List</a>
         </p>
     </div>
 </form>
 
-</form>
 <table class="table">
 
     <thead>
@@ -42,13 +40,13 @@
                         ratingsort="Rating_d";
                     }
                 }
-               <a asp-page="./Index" asp-route-sort="@namesort" asp-pagenum=@(Model.pagenum)>  @Html.DisplayNameFor(model => model.Resturant[0].Name)</a>
+               <a asp-page="./Index" asp-route-sort="@namesort" asp-route-pagenum="@(Model.pagenum)">  @Html.DisplayNameFor(model => model.Resturant[0].Name)</a>
             </th>
             <th>
-               <a asp-page="./Index" asp-route-sort="@genresort" asp-pagenum=@(Model.pagenum)> @Html.DisplayNameFor(model => model.Resturant[0].Genre)</a> 
+               <a asp-page="./Index" asp-route-sort="@genresort" asp-route-pagenum="@(Model.pagenum)"> @Html.DisplayNameFor(model => model.Resturant[0].Genre)</a> 
             </th>
             <th>
-              <a asp-page="./Index" asp-route-sort="@ratingsort" asp-pagenum=@(Model.pagenum)>   @Html.DisplayNameFor(model => model.Resturant[0].Rating)</a>
+              <a asp-page="./Index" asp-route-sort="@ratingsort" asp-route-pagenum="@(Model.pagenum)">   @Html.DisplayNameFor(model => model.Resturant[0].Rating)</a>
             </th>
             <th></th>
         </tr>
@@ -96,7 +94,7 @@
     }
 }
 <nav aria-label="Page navigation example">
-    <ul class"pagination">
+    <ul class="pagination">
         <li class="page-item @pdisable"><a class="page-link" asp-page="./Index" asp-route-pagenum="@(Model.pagenum-1)">Previous</a>
         </li>
         <li class="page-item @ndisable"><a class="page-link" asp-page="./Index" asp-route-pagenum="@(Model.pagenum+1)">Next</a>

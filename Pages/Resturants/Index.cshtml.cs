@@ -53,8 +53,16 @@ namespace Final_Project.Pages.Resurants
                 break;
                 
             }
+            if(searchString!=null){
+                Resturant = await query.Include(a=>a.ReviewResturants).ThenInclude(sc=>sc.FoodReviewer).Skip((pagenum-1)*pagesize).Take(pagesize).Where(p=>p.Name.Contains(searchString)).ToListAsync();
+
+            }
+            else{
+                Resturant = await query.Include(a=>a.ReviewResturants).ThenInclude(sc=>sc.FoodReviewer).Skip((pagenum-1)*pagesize).Take(pagesize).ToListAsync();
+                
+            }
             
-            Resturant = await query.Include(a=>a.ReviewResturants).ThenInclude(sc=>sc.FoodReviewer).Skip((pagenum-1)*pagesize).Take(pagesize).Where(p=>p.Name.Contains(searchString)).ToListAsync();
+            
         }
        
         
